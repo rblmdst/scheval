@@ -1,0 +1,46 @@
+{
+  "name": "@rblmdst/scheval",
+  "version": "1.0.0",
+  "description": "A simple Javascript object/schema validator with simple and comprehensible API.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/cjs/index.d.ts",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && npm run build:cjs_es",
+    "build:cjs_es": "npm run build:cjs && npm run build:es",
+    "build:cjs": "tsc -p tsconfig-cjs.json",
+    "build:es": "tsc -p tsconfig.json",
+    "test": "env TS_NODE_PROJECT=test/tsconfig.json mocha --require ts-node/register ./test/*.spec.ts"
+  },
+  "author": "Modeste ASSIONGBON",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  },
+  "keywords": [
+    "schema",
+    "validator",
+    "validation",
+    "schema-validator",
+    "object-validator",
+    "javascript-object-validator",
+    "schema-validation",
+    "object-validation",
+    "javascript object-validation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rblmdst/scheval.git"
+  }
+}
