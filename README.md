@@ -513,3 +513,7 @@ if (baseValidationError.length) {
 - My native language is French, and I have noticed (at least before writing this library) that with most of the existing validator libraries eg. joi you do not have a total control on the error message you want to display and the error message are in English by default.
 - I have find one library that allows to specified custom error message but it throws an error when there is an extra fields in the object to validate that are not specified in the validation configuration.
 - I want to have a library with a simple validation configuration API easy to read and write.
+
+## License
+
+MIT © [Modeste ASSIONGBON](https://github.com/rblmdst/)
