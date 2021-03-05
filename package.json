@@ -1,6 +1,6 @@
 {
   "name": "@rblmdst/scheval",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple Javascript object/schema validator with simple and comprehensible API.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
